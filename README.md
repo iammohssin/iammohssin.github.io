@@ -2,7 +2,7 @@
 
 Personal portfolio / CV site. Single self-contained `index.html` — no build step, no dependencies.
 
-Live at: https://iammohssin.github.io/ (once deployed — see below)
+Live at: https://iammohssin.github.io/
 
 ## Stack
 
