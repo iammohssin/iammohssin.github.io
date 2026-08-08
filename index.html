@@ -1,0 +1,880 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Mohsin Javaid — Full-Stack Web Architect</title>
+<meta name="description" content="Mohsin Javaid — full-stack web architect in Lahore, Pakistan. Builds auth systems, APIs, AI chatbots, and cross-platform relays: AuthLume, SimShare, StayLume, Utility-Grid, and more." />
+<meta name="robots" content="index, follow" />
+<meta name="author" content="Mohsin Javaid" />
+<meta name="keywords" content="Mohsin Javaid, full-stack developer, Node.js developer, NestJS, React developer, React Native developer, AI chatbot developer, authentication systems, Lahore Pakistan developer" />
+<link rel="canonical" href="https://iammohssin.github.io/" />
+
+<!-- Open Graph -->
+<meta property="og:type" content="website" />
+<meta property="og:title" content="Mohsin Javaid — Full-Stack Web Architect" />
+<meta property="og:description" content="Full-stack web architect in Lahore, Pakistan. Builds auth systems, APIs, AI chatbots, and cross-platform relays: AuthLume, SimShare, StayLume, Utility-Grid, and more." />
+<meta property="og:url" content="https://iammohssin.github.io/" />
+<meta property="og:image" content="https://iammohssin.github.io/og-image.png" />
+<meta property="og:site_name" content="Mohsin Javaid" />
+<meta property="og:locale" content="en_US" />
+
+<!-- Twitter -->
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Mohsin Javaid — Full-Stack Web Architect" />
+<meta name="twitter:description" content="Full-stack web architect in Lahore, Pakistan. Builds auth systems, APIs, AI chatbots, and cross-platform relays." />
+<meta name="twitter:image" content="https://iammohssin.github.io/og-image.png" />
+
+<meta name="theme-color" content="#eef1f1" media="(prefers-color-scheme: light)" />
+<meta name="theme-color" content="#0d1214" media="(prefers-color-scheme: dark)" />
+
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Crect width='24' height='24' rx='5' fill='%230d1214'/%3E%3Ccircle cx='7' cy='7' r='2.4' fill='%23e3993e'/%3E%3Ccircle cx='17' cy='17' r='2.4' fill='%2334c9a6'/%3E%3Cpath d='M9 9l6 6' stroke='%2391a3a8' stroke-width='1.5' stroke-linecap='round'/%3E%3C/svg%3E" />
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Mohsin Javaid",
+  "url": "https://iammohssin.github.io/",
+  "jobTitle": "Full-Stack Web Architect",
+  "description": "Full-stack web architect building authentication systems, APIs, AI chatbots, and cross-platform mobile apps.",
+  "email": "mailto:muhsanjavaid@gmail.com",
+  "worksFor": {
+    "@type": "Organization",
+    "name": "ForunPoint"
+  },
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Lahore",
+    "addressCountry": "PK"
+  },
+  "sameAs": [
+    "https://github.com/iammohssin",
+    "https://www.linkedin.com/in/iammoshin/",
+    "https://www.upwork.com/freelancers/~017f05a167f11b9de7"
+  ],
+  "knowsAbout": ["TypeScript", "Node.js", "NestJS", "React", "React Native", "Angular", "Authentication Systems", "AI Chatbots", "API Development"]
+}
+</script>
+<style>
+  :root {
+    --bg: #eef1f1;
+    --surface: #ffffff;
+    --surface-2: #e5e9e9;
+    --border: #cfd6d6;
+    --text: #12181a;
+    --muted: #55656b;
+    --accent: #b9701a;
+    --accent-ink: #ffffff;
+    --status: #17806e;
+    --status-ink: #ffffff;
+    --status-amber: #a15c00;
+    --shadow: 0 1px 2px rgba(18, 24, 26, 0.04), 0 8px 24px -12px rgba(18, 24, 26, 0.18);
+    --radius: 3px;
+    --serif: Rockwell, "Roboto Slab", "Iowan Old Style", Georgia, serif;
+    --sans: "Segoe UI", system-ui, -apple-system, "Helvetica Neue", Arial, sans-serif;
+    --mono: "Cascadia Code", "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #0d1214;
+      --surface: #141b1e;
+      --surface-2: #1a2226;
+      --border: #263136;
+      --text: #e7eeef;
+      --muted: #91a3a8;
+      --accent: #e3993e;
+      --accent-ink: #14100a;
+      --status: #34c9a6;
+      --status-ink: #04211b;
+      --status-amber: #e3993e;
+      --shadow: 0 1px 2px rgba(0, 0, 0, 0.3), 0 12px 32px -12px rgba(0, 0, 0, 0.55);
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg: #0d1214;
+    --surface: #141b1e;
+    --surface-2: #1a2226;
+    --border: #263136;
+    --text: #e7eeef;
+    --muted: #91a3a8;
+    --accent: #e3993e;
+    --accent-ink: #14100a;
+    --status: #34c9a6;
+    --status-ink: #04211b;
+    --status-amber: #e3993e;
+    --shadow: 0 1px 2px rgba(0, 0, 0, 0.3), 0 12px 32px -12px rgba(0, 0, 0, 0.55);
+  }
+  :root[data-theme="light"] {
+    --bg: #eef1f1;
+    --surface: #ffffff;
+    --surface-2: #e5e9e9;
+    --border: #cfd6d6;
+    --text: #12181a;
+    --muted: #55656b;
+    --accent: #b9701a;
+    --accent-ink: #ffffff;
+    --status: #17806e;
+    --status-ink: #ffffff;
+    --status-amber: #a15c00;
+    --shadow: 0 1px 2px rgba(18, 24, 26, 0.04), 0 8px 24px -12px rgba(18, 24, 26, 0.18);
+  }
+
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  @media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto; }
+    * { animation-duration: 0.001ms !important; animation-iteration-count: 1 !important; transition-duration: 0.001ms !important; scroll-behavior: auto !important; }
+  }
+
+  body {
+    margin: 0;
+    background-color: var(--bg);
+    background-image: radial-gradient(circle, color-mix(in srgb, var(--text) 10%, transparent) 1px, transparent 1px);
+    background-size: 26px 26px;
+    color: var(--text);
+    font-family: var(--sans);
+    font-size: 16px;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+  }
+  body::before {
+    content: "";
+    position: fixed; top: 0; left: 0; right: 0; height: 3px;
+    background: linear-gradient(90deg, var(--accent), var(--status));
+    z-index: 60;
+  }
+
+  .skip-link {
+    position: absolute; left: -9999px; top: 0;
+    background: var(--accent); color: var(--accent-ink);
+    padding: 0.6em 1em; z-index: 100; font-family: var(--mono);
+  }
+  .skip-link:focus { left: 1em; top: 1em; }
+
+  a { color: inherit; }
+  :focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 3px;
+  }
+
+  .wrap {
+    max-width: 920px;
+    margin: 0 auto;
+    padding: 0 clamp(1.25rem, 4vw, 2.5rem);
+  }
+
+  /* ---------- Nav ---------- */
+  .nav {
+    position: sticky; top: 0; z-index: 50;
+    background: color-mix(in srgb, var(--bg) 88%, transparent);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid var(--border);
+  }
+  .nav-inner {
+    max-width: 920px; margin: 0 auto;
+    padding: 0.85rem clamp(1.25rem, 4vw, 2.5rem);
+    display: flex; align-items: center; justify-content: space-between; gap: 1rem;
+  }
+  .brand {
+    font-family: var(--mono); font-weight: 600; font-size: 0.95rem;
+    text-decoration: none; letter-spacing: 0.01em; white-space: nowrap;
+  }
+  .brand .dot { color: var(--status); }
+  .nav-links {
+    display: flex; gap: 1.25rem; overflow-x: auto;
+    font-family: var(--mono); font-size: 0.82rem;
+    scrollbar-width: none;
+  }
+  .nav-links::-webkit-scrollbar { display: none; }
+  .nav-links a {
+    text-decoration: none; color: var(--muted); white-space: nowrap;
+    padding: 0.3rem 0; border-bottom: 1px solid transparent;
+    transition: color 0.15s ease, border-color 0.15s ease;
+  }
+  .nav-links a:hover { color: var(--text); border-color: var(--accent); }
+  .nav-right { display: flex; align-items: center; gap: 0.75rem; flex: 0 0 auto; }
+
+  .theme-toggle {
+    width: 34px; height: 34px; border-radius: 50%;
+    border: 1px solid var(--border); background: var(--surface);
+    display: flex; align-items: center; justify-content: center;
+    cursor: pointer; color: var(--text); flex: 0 0 auto;
+  }
+  .theme-toggle svg { width: 16px; height: 16px; }
+
+  /* ---------- Hero ---------- */
+  .hero {
+    position: relative;
+    padding: clamp(3.5rem, 9vw, 6.5rem) 0 clamp(3rem, 7vw, 5rem);
+    overflow: hidden;
+  }
+  #hero-canvas {
+    position: absolute; inset: 0; width: 100%; height: 100%;
+    opacity: 0.55; pointer-events: none;
+  }
+  .hero-content { position: relative; z-index: 1; }
+  .eyebrow {
+    font-family: var(--mono); font-size: 0.8rem; color: var(--status);
+    display: inline-flex; align-items: center; gap: 0.5em;
+    background: color-mix(in srgb, var(--status) 12%, transparent);
+    border: 1px solid color-mix(in srgb, var(--status) 35%, transparent);
+    padding: 0.3em 0.7em; border-radius: var(--radius);
+    margin-bottom: 1.4rem;
+  }
+  .eyebrow .blink { width: 6px; height: 6px; border-radius: 50%; background: var(--status); animation: blink 1.8s ease-in-out infinite; }
+  @keyframes blink { 0%, 100% { opacity: 1; } 50% { opacity: 0.25; } }
+
+  h1.name {
+    font-family: var(--serif);
+    font-size: clamp(2.4rem, 6.5vw, 4rem);
+    line-height: 1.04; margin: 0 0 0.5rem; font-weight: 700;
+    text-wrap: balance;
+  }
+  .role {
+    font-family: var(--serif); font-style: italic; font-weight: 400;
+    font-size: clamp(1.15rem, 2.6vw, 1.5rem); color: var(--muted);
+    margin: 0 0 1.5rem;
+  }
+  .hero-desc {
+    max-width: 58ch; font-size: 1.08rem; color: var(--text);
+    margin: 0 0 2rem;
+  }
+  .hero-actions { display: flex; flex-wrap: wrap; gap: 0.85rem; margin-bottom: 2.5rem; }
+
+  .btn {
+    display: inline-flex; align-items: center; gap: 0.5em;
+    font-family: var(--mono); font-size: 0.85rem; text-decoration: none;
+    padding: 0.7em 1.15em; border-radius: var(--radius);
+    border: 1px solid var(--border);
+    transition: transform 0.15s ease, border-color 0.15s ease, background 0.15s ease;
+  }
+  .btn:hover { transform: translateY(-1px); }
+  .btn-primary { background: var(--accent); color: var(--accent-ink); border-color: var(--accent); }
+  .btn-primary:hover { background: color-mix(in srgb, var(--accent) 85%, black); }
+  .btn-ghost { background: var(--surface); color: var(--text); }
+  .btn-ghost:hover { border-color: var(--accent); }
+
+  .hero-meta {
+    display: flex; flex-wrap: wrap; gap: 1.5rem;
+    font-family: var(--mono); font-size: 0.8rem; color: var(--muted);
+    border-top: 1px solid var(--border); padding-top: 1.25rem;
+  }
+  .hero-meta strong { color: var(--text); font-weight: 600; }
+
+  .hero-mark {
+    position: absolute; top: clamp(1.5rem, 5vw, 3rem); right: clamp(1.5rem, 5vw, 3rem);
+    display: flex; flex-direction: column; align-items: center; gap: 0.6rem; z-index: 1;
+  }
+  .hero-mark-ring {
+    width: 68px; height: 68px; border-radius: 50%; position: relative;
+    display: flex; align-items: center; justify-content: center;
+    background: var(--surface); border: 1px solid var(--border); box-shadow: var(--shadow);
+    font-family: var(--serif); font-weight: 700; font-size: 1.2rem; color: var(--accent);
+  }
+  .hero-mark-ring::after {
+    content: ""; position: absolute; inset: -7px; border-radius: 50%;
+    border: 1px dashed color-mix(in srgb, var(--status) 45%, transparent);
+  }
+  .hero-mark-label {
+    font-family: var(--mono); font-size: 0.6rem; letter-spacing: 0.1em;
+    color: var(--muted); text-transform: uppercase; white-space: nowrap;
+  }
+  @media (max-width: 900px) { .hero-mark { display: none; } }
+
+  /* ---------- Sections ---------- */
+  section.block { padding: clamp(3rem, 7vw, 4.5rem) 0; border-top: 1px solid var(--border); }
+  .section-head { display: flex; align-items: baseline; justify-content: space-between; gap: 1rem; margin-bottom: 2.25rem; flex-wrap: wrap; }
+  .endpoint {
+    font-family: var(--mono); font-size: 0.78rem; color: var(--muted);
+    background: var(--surface-2); border: 1px solid var(--border);
+    padding: 0.25em 0.6em; border-radius: var(--radius);
+  }
+  .endpoint .verb { color: var(--status); font-weight: 700; margin-right: 0.4em; }
+  h2.section-title {
+    font-family: var(--serif); font-size: clamp(1.5rem, 3.5vw, 2rem);
+    margin: 0; font-weight: 700; text-wrap: balance;
+  }
+  h2.section-title::before {
+    content: ""; display: block; width: 28px; height: 3px;
+    background: var(--accent); border-radius: 2px; margin-bottom: 0.6rem;
+  }
+
+  .reveal { opacity: 0; transform: translateY(14px); transition: opacity 0.6s ease, transform 0.6s ease; }
+  .reveal.in { opacity: 1; transform: translateY(0); }
+
+  /* About */
+  .about-text { max-width: 68ch; font-size: 1.05rem; }
+  .about-text p { margin: 0 0 1.1rem; }
+  .about-text strong { color: var(--accent); font-weight: 600; }
+
+  /* Stack */
+  .stack-groups { display: grid; gap: 1.75rem; }
+  .stack-group-label {
+    font-family: var(--mono); font-size: 0.78rem; color: var(--muted);
+    text-transform: uppercase; letter-spacing: 0.08em; margin-bottom: 0.65rem; display: block;
+  }
+  .pills { display: flex; flex-wrap: wrap; gap: 0.5rem; }
+  .pill {
+    font-family: var(--mono); font-size: 0.82rem;
+    background: var(--surface); border: 1px solid var(--border);
+    padding: 0.35em 0.75em; border-radius: var(--radius); color: var(--text);
+  }
+
+  /* Services */
+  .services-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 1px; background: var(--border); border: 1px solid var(--border); border-radius: var(--radius); overflow: hidden; }
+  .service-card { background: var(--surface); padding: 1.6rem; transition: background 0.15s ease; }
+  .service-card:hover { background: var(--surface-2); }
+  .service-card h3 { font-family: var(--serif); font-size: 1.15rem; margin: 0 0 0.6rem; }
+  .service-card p { margin: 0; color: var(--muted); font-size: 0.94rem; }
+  .service-index { font-family: var(--mono); font-size: 0.75rem; color: var(--accent); display: block; margin-bottom: 0.5rem; }
+  .service-icon {
+    width: 36px; height: 36px; border-radius: 50%; margin-bottom: 0.9rem;
+    background: color-mix(in srgb, var(--accent) 14%, transparent);
+    display: flex; align-items: center; justify-content: center; color: var(--accent);
+  }
+  .service-icon svg { width: 18px; height: 18px; }
+
+  /* Projects */
+  .projects-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.1rem; }
+  .project-card {
+    background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius);
+    padding: 1.4rem; box-shadow: var(--shadow);
+    display: flex; flex-direction: column; gap: 0.85rem;
+    transition: transform 0.18s ease, border-color 0.18s ease, box-shadow 0.18s ease;
+  }
+  .project-card:hover {
+    transform: translateY(-3px); border-color: var(--accent);
+    box-shadow: 0 6px 20px -8px color-mix(in srgb, var(--accent) 40%, transparent), var(--shadow);
+  }
+  .project-card.featured { border-color: color-mix(in srgb, var(--accent) 55%, var(--border)); }
+  .project-flag {
+    font-family: var(--mono); font-size: 0.65rem; letter-spacing: 0.08em; text-transform: uppercase;
+    color: var(--accent); margin: -0.3rem 0 -0.3rem;
+  }
+  .project-top { display: flex; align-items: flex-start; justify-content: space-between; gap: 0.75rem; }
+  .project-card h3 { font-family: var(--serif); font-size: 1.2rem; margin: 0; }
+  .badge {
+    font-family: var(--mono); font-size: 0.68rem; letter-spacing: 0.03em;
+    padding: 0.28em 0.55em; border-radius: 999px; white-space: nowrap; flex: 0 0 auto;
+  }
+  .badge-live { background: color-mix(in srgb, var(--status) 16%, transparent); color: var(--status); border: 1px solid color-mix(in srgb, var(--status) 40%, transparent); }
+  .badge-build { background: color-mix(in srgb, var(--status-amber) 14%, transparent); color: var(--status-amber); border: 1px solid color-mix(in srgb, var(--status-amber) 40%, transparent); }
+  .badge-work { background: var(--surface-2); color: var(--muted); border: 1px solid var(--border); }
+  .project-card p.desc { margin: 0; color: var(--muted); font-size: 0.93rem; flex-grow: 1; }
+  .project-tags { display: flex; flex-wrap: wrap; gap: 0.4rem; }
+  .tag { font-family: var(--mono); font-size: 0.72rem; color: var(--muted); background: var(--surface-2); padding: 0.22em 0.5em; border-radius: var(--radius); }
+
+  /* Experience */
+  .timeline { display: grid; gap: 1.75rem; }
+  .timeline-item { display: grid; grid-template-columns: minmax(120px, 160px) 1fr; gap: 1.25rem; }
+  .timeline-when { font-family: var(--mono); font-size: 0.8rem; color: var(--muted); padding-top: 0.2rem; }
+  .timeline-body h3 { font-family: var(--serif); font-size: 1.15rem; margin: 0 0 0.15rem; }
+  .timeline-body .org { color: var(--accent); font-family: var(--mono); font-size: 0.82rem; display: block; margin-bottom: 0.5rem; }
+  .timeline-body p { margin: 0; color: var(--muted); font-size: 0.93rem; max-width: 56ch; }
+  @media (max-width: 560px) {
+    .timeline-item { grid-template-columns: 1fr; gap: 0.35rem; }
+  }
+
+  /* Contact */
+  .contact-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1rem; }
+  .contact-card {
+    display: flex; align-items: center; gap: 0.9rem;
+    background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius);
+    padding: 1.15rem; text-decoration: none; color: var(--text);
+    transition: border-color 0.15s ease, transform 0.15s ease;
+  }
+  .contact-card:hover { border-color: var(--accent); transform: translateY(-2px); }
+  .contact-icon {
+    width: 38px; height: 38px; border-radius: 50%; flex: 0 0 auto;
+    background: var(--surface-2); display: flex; align-items: center; justify-content: center;
+  }
+  .contact-icon svg { width: 18px; height: 18px; }
+  .contact-card strong { display: block; font-size: 0.95rem; }
+  .contact-card span { display: block; font-family: var(--mono); font-size: 0.78rem; color: var(--muted); }
+
+  footer {
+    border-top: 1px solid var(--border); padding: 2rem 0 3rem;
+    font-family: var(--mono); font-size: 0.78rem; color: var(--muted);
+    display: flex; justify-content: space-between; flex-wrap: wrap; gap: 0.75rem;
+  }
+  footer .status-line { display: inline-flex; align-items: center; gap: 0.5em; }
+  footer .status-line .dot { width: 6px; height: 6px; border-radius: 50%; background: var(--status); }
+</style>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="nav">
+  <div class="nav-inner">
+    <a class="brand" href="#hero">mohsin<span class="dot">.</span>relay</a>
+    <nav class="nav-links" aria-label="Section navigation">
+      <a href="#about">/about</a>
+      <a href="#stack">/stack</a>
+      <a href="#services">/services</a>
+      <a href="#projects">/projects</a>
+      <a href="#experience">/experience</a>
+      <a href="#contact">/contact</a>
+    </nav>
+    <div class="nav-right">
+      <button class="theme-toggle" id="themeToggle" type="button" aria-label="Toggle color theme">
+        <svg id="themeIcon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"></path></svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+
+  <section class="hero" id="hero">
+    <canvas id="hero-canvas" aria-hidden="true"></canvas>
+    <div class="hero-mark" aria-hidden="true">
+      <span class="hero-mark-ring">MJ</span>
+      <span class="hero-mark-label">Port &middot; Active</span>
+    </div>
+    <div class="wrap hero-content">
+      <span class="eyebrow"><span class="blink"></span>GET /mohsin-javaid &middot; 200 OK</span>
+      <h1 class="name">Mohsin Javaid</h1>
+      <p class="role">Full-Stack Web Architect</p>
+      <p class="hero-desc">I build the parts of a product that make separate systems act like one — auth layers, relays, AI chatbots, and the APIs that sit quietly underneath everything else. Based in Lahore, Pakistan.</p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="#projects">See the work</a>
+        <a class="btn btn-ghost" href="https://www.upwork.com/freelancers/~017f05a167f11b9de7?mp_source=share" target="_blank" rel="noopener noreferrer">Hire me on Upwork</a>
+        <a class="btn btn-ghost" href="https://github.com/iammohssin" target="_blank" rel="noopener noreferrer">GitHub</a>
+      </div>
+      <div class="hero-meta">
+        <span><strong>5+ yrs</strong> building production systems</span>
+        <span><strong>ForunPoint</strong> — Lead Software Development Engineer, since Feb 2024</span>
+        <span><strong>Lahore, PK</strong> — open to remote</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="block reveal" id="about">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="endpoint"><span class="verb">GET</span>/about</span>
+        <h2 class="section-title">A short version of a long story</h2>
+      </div>
+      <div class="about-text">
+        <p>I build the connective tissue of software: the API nine other things depend on, the relay that lets two devices that shouldn't be able to talk to each other talk anyway, the auth system that has to be right every single time. That's been the throughline across five-plus years of full-stack work — <strong>TypeScript, React, Angular, Node.js</strong>, and whatever database the problem actually calls for.</p>
+        <p>Day to day, I lead backend development at <strong>ForunPoint</strong> — Node.js and NestJS APIs for a multi-service platform spanning food delivery, gift delivery, ride-hailing, and car rental, plus the admin/vendor dashboards and payment integrations (Stripe, PayPal, JazzCash, EasyPaisa, 2Checkout) that keep it running. I started there as a full-stack developer in 2023 and now mentor the team building it. Outside of that, I build open-source infrastructure for the same reason I build it at work: because the unglamorous parts — migrations, session handling, a native platform bridge nobody wants to touch — are the parts that make the glamorous parts actually work.</p>
+        <p>Recent nights-and-weekends work includes <strong>AuthLume</strong>, a self-hostable auth platform built to replace six SDKs with one API, and <strong>SimShare</strong>, which keeps a single phone line alive across two physically separate phones over WebRTC. I like problems shaped like that.</p>
+        <p>Lately that list has grown to include <strong>AI</strong> — wiring chatbots and LLM-backed features into real products, not demo scripts. And on mobile, SimShare pushed me further into native territory than a typical React Native app ever does: CallKit on iOS, Android's Telecom stack, and a Shizuku-based system service to capture call audio Android normally locks away from third-party apps entirely.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="block reveal" id="stack">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="endpoint"><span class="verb">GET</span>/stack</span>
+        <h2 class="section-title">What I build with</h2>
+      </div>
+      <div class="stack-groups">
+        <div>
+          <span class="stack-group-label">Languages</span>
+          <div class="pills">
+            <span class="pill">TypeScript</span>
+            <span class="pill">JavaScript</span>
+            <span class="pill">Go</span>
+            <span class="pill">C++</span>
+          </div>
+        </div>
+        <div>
+          <span class="stack-group-label">Backend &amp; data</span>
+          <div class="pills">
+            <span class="pill">Node.js</span>
+            <span class="pill">NestJS</span>
+            <span class="pill">Express</span>
+            <span class="pill">PostgreSQL</span>
+            <span class="pill">MongoDB</span>
+            <span class="pill">Prisma</span>
+            <span class="pill">Redis / BullMQ</span>
+          </div>
+        </div>
+        <div>
+          <span class="stack-group-label">Frontend</span>
+          <div class="pills">
+            <span class="pill">React</span>
+            <span class="pill">Next.js</span>
+            <span class="pill">Angular</span>
+            <span class="pill">Tailwind CSS</span>
+          </div>
+        </div>
+        <div>
+          <span class="stack-group-label">Mobile &amp; platform</span>
+          <div class="pills">
+            <span class="pill">React Native</span>
+            <span class="pill">Expo</span>
+            <span class="pill">WebRTC</span>
+            <span class="pill">WebAuthn / Passkeys</span>
+          </div>
+        </div>
+        <div>
+          <span class="stack-group-label">AI &amp; automation</span>
+          <div class="pills">
+            <span class="pill">OpenAI API</span>
+            <span class="pill">LangChain</span>
+            <span class="pill">RAG</span>
+            <span class="pill">Prompt Engineering</span>
+          </div>
+        </div>
+        <div>
+          <span class="stack-group-label">Infra &amp; tooling</span>
+          <div class="pills">
+            <span class="pill">Docker</span>
+            <span class="pill">Turborepo / pnpm</span>
+            <span class="pill">AWS S3</span>
+            <span class="pill">CI/CD</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="block reveal" id="services">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="endpoint"><span class="verb">POST</span>/services</span>
+        <h2 class="section-title">What I take on</h2>
+      </div>
+      <div class="services-grid">
+        <div class="service-card">
+          <span class="service-icon"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7"></rect><rect x="14" y="3" width="7" height="7"></rect><rect x="14" y="14" width="7" height="7"></rect><rect x="3" y="14" width="7" height="7"></rect></svg></span>
+          <span class="service-index">01</span>
+          <h3>Full-stack web development</h3>
+          <p>End-to-end products — Next.js or Angular front end, NestJS or Node API, schema to deploy. I build it so the same person who wrote the migration can also fix the button.</p>
+        </div>
+        <div class="service-card">
+          <span class="service-icon"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2 4 5v6c0 5 3.4 8.7 8 11 4.6-2.3 8-6 8-11V5l-8-3z"></path><path d="m9 12 2 2 4-4"></path></svg></span>
+          <span class="service-index">02</span>
+          <h3>Authentication &amp; security systems</h3>
+          <p>Passkeys, OAuth/social login, MFA, session and API-key management — either wired to a provider or, if the requirements are unusual enough, built from scratch. AuthLume is the proof of work.</p>
+        </div>
+        <div class="service-card">
+          <span class="service-icon"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 7 21 7 21 11"></path><path d="M21 7 13 15 9 11 3 17"></path></svg></span>
+          <span class="service-index">03</span>
+          <h3>API development &amp; integration</h3>
+          <p>REST APIs and third-party integrations — payments, maps, cloud storage — documented with Swagger/OpenAPI so the next developer isn't guessing.</p>
+        </div>
+        <div class="service-card">
+          <span class="service-icon"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="2" width="12" height="20" rx="2"></rect><path d="M11 18h2"></path></svg></span>
+          <span class="service-index">04</span>
+          <h3>Mobile app development</h3>
+          <p>React Native and Expo apps for iOS and Android — not just CRUD screens. When the platform's own APIs get in the way, I go down into native modules: CallKit, Android's Telecom stack, Shizuku-level system permissions, the kind of thing SimShare needed to make two phones share one phone line.</p>
+        </div>
+        <div class="service-card">
+          <span class="service-icon"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path><path d="M8 10h.01M12 10h.01M16 10h.01"></path></svg></span>
+          <span class="service-index">05</span>
+          <h3>AI chatbots &amp; automation</h3>
+          <p>Custom chatbots and AI-assisted features wired into a real product — LLM APIs, retrieval over your own data, and the guardrails to keep them predictable in production, not just impressive in a demo.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="block reveal" id="projects">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="endpoint"><span class="verb">GET</span>/projects</span>
+        <h2 class="section-title">Selected work</h2>
+      </div>
+      <div class="projects-grid">
+
+        <article class="project-card featured">
+          <span class="project-flag">★ Flagship build</span>
+          <div class="project-top">
+            <h3>AuthLume</h3>
+            <span class="badge badge-live">open-source</span>
+          </div>
+          <p class="desc">A self-hostable auth platform that unifies passkeys, social login, OTP, MFA, sessions, and API keys behind one API — so a product ships one integration instead of six.</p>
+          <div class="project-tags">
+            <span class="tag">NestJS</span><span class="tag">Prisma</span><span class="tag">PostgreSQL</span><span class="tag">Redis</span><span class="tag">Next.js</span><span class="tag">WebAuthn</span>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-top">
+            <h3>SimShare</h3>
+            <span class="badge badge-build">experimental</span>
+          </div>
+          <p class="desc">Keeps one SIM alive across two phones — an Android holds the line, a SIM-less iPhone rings, answers, and texts through it over WebRTC and a CallKit bridge.</p>
+          <div class="project-tags">
+            <span class="tag">React Native</span><span class="tag">Expo</span><span class="tag">WebRTC</span><span class="tag">CallKit</span><span class="tag">Native Modules</span><span class="tag">Node.js</span>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-top">
+            <h3>Utility-Grid</h3>
+            <span class="badge badge-live">110 tools live</span>
+          </div>
+          <p class="desc">500 planned, 110 shipped: one Next.js app of free browser tools — converters, calculators, generators — that run entirely client-side. No backend, no uploads.</p>
+          <div class="project-tags">
+            <span class="tag">Next.js</span><span class="tag">TypeScript</span><span class="tag">Tailwind CSS</span>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-top">
+            <h3>StayLume</h3>
+            <span class="badge badge-build">in development</span>
+          </div>
+          <p class="desc">A hotel booking platform end to end: a guest app to book stays, a hotel-owner app to manage them, and a NestJS backend keeping both in sync.</p>
+          <div class="project-tags">
+            <span class="tag">React Native</span><span class="tag">Expo</span><span class="tag">NestJS</span><span class="tag">Next.js</span>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-top">
+            <h3>Lost &amp; Found Network</h3>
+            <span class="badge badge-build">early build</span>
+          </div>
+          <p class="desc">A free, nationwide board for reconnecting lost belongings with their owners — report, browse, and manage claims with photo verification.</p>
+          <div class="project-tags">
+            <span class="tag">Next.js</span><span class="tag">NestJS</span><span class="tag">MongoDB</span><span class="tag">Cloudinary</span>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-top">
+            <h3>FoRun</h3>
+            <span class="badge badge-work">@ ForunPoint LLC</span>
+          </div>
+          <p class="desc">Lead backend development (Node.js, NestJS) for ForunPoint's multi-service platform — food delivery, gift delivery, ride-hailing, and car rental — including admin/vendor dashboards and five payment-gateway integrations (Stripe, PayPal, 2Checkout, JazzCash, EasyPaisa).</p>
+          <div class="project-tags">
+            <span class="tag">Node.js</span><span class="tag">NestJS</span><span class="tag">Stripe</span><span class="tag">Admin Dashboards</span>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-top">
+            <h3>Photele</h3>
+            <span class="badge badge-work">freelance · 2022–2024</span>
+          </div>
+          <p class="desc">"Capture your best memories" — built end to end over two years: booking flows, Stripe subscriptions, an admin portal, in-app messaging, and Google Maps/Places integration for a platform matching clients with photographers by location and event type.</p>
+          <div class="project-tags">
+            <span class="tag">Angular</span><span class="tag">Node.js</span><span class="tag">MongoDB</span><span class="tag">Stripe</span><span class="tag">Google Maps API</span>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="block reveal" id="experience">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="endpoint"><span class="verb">GET</span>/experience</span>
+        <h2 class="section-title">Where the time went</h2>
+      </div>
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-when">Feb 2024 — Present</div>
+          <div class="timeline-body">
+            <h3>Lead Software Development Engineer</h3>
+            <span class="org">ForunPoint &middot; Frisco, TX (Remote)</span>
+            <p>Lead backend development in Node.js and NestJS for a multi-service platform spanning food delivery, gift delivery, ride-hailing, and car rental. Own scalable APIs and admin/vendor dashboards, integrate payment gateways (Stripe, PayPal, 2Checkout, JazzCash, EasyPaisa), and mentor the team.</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-when">Feb 2023 — Feb 2024</div>
+          <div class="timeline-body">
+            <h3>Full-Stack Developer</h3>
+            <span class="org">ForunPoint &middot; Frisco, TX (Remote)</span>
+            <p>Built the ForunPoint website and admin/restaurant dashboards in React, backend APIs in Node/Express/MongoDB, and Stripe payments and SendGrid email integration. Deployed and ran the server on AWS EC2 with NGINX and PM2.</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-when">Apr 2024 — Jun 2024</div>
+          <div class="timeline-body">
+            <h3>Full Stack Developer <span style="color:var(--muted); font-weight:400;">(Freelance)</span></h3>
+            <span class="org">Easy Finance &middot; Lahore (Remote)</span>
+            <p>Built EasyFinance end to end — an AI-assisted loan approval platform for cars and events, with separate admin, service-provider, and public-facing apps in React/Material-UI backed by a Node.js/MongoDB API.</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-when">Feb 2022 — May 2024</div>
+          <div class="timeline-body">
+            <h3>Full Stack Web Developer <span style="color:var(--muted); font-weight:400;">(Part-time)</span></h3>
+            <span class="org">Photele &middot; Columbus, OH (Remote)</span>
+            <p>Built Photele's web platform in Angular and Node.js — booking flows, Stripe subscriptions, an admin portal, a messaging app, Google Maps/Places integration, and SEO-optimized server-side rendering.</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-when">Dec 2020 — Feb 2022</div>
+          <div class="timeline-body">
+            <h3>Software Engineer</h3>
+            <span class="org">OneByte &middot; Lahore, PK (On-site)</span>
+            <p>Started my career in server-side development, building and maintaining backend services.</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-when">2023 — Present</div>
+          <div class="timeline-body">
+            <h3>Independent &amp; Open Source</h3>
+            <span class="org">Self-directed</span>
+            <p>Design and build self-directed products — AuthLume, SimShare, StayLume, Utility-Grid, Lost &amp; Found Network — alongside freelance engagements found via Upwork.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="block reveal" id="contact">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="endpoint"><span class="verb">POST</span>/contact</span>
+        <h2 class="section-title">Get in touch</h2>
+      </div>
+      <div class="contact-grid">
+        <a class="contact-card" href="mailto:muhsanjavaid@gmail.com">
+          <span class="contact-icon"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"></rect><path d="m22 6-10 7L2 6"></path></svg></span>
+          <span><strong>Email</strong><span>muhsanjavaid@gmail.com</span></span>
+        </a>
+        <a class="contact-card" href="https://www.upwork.com/freelancers/~017f05a167f11b9de7?mp_source=share" target="_blank" rel="noopener noreferrer">
+          <span class="contact-icon"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg></span>
+          <span><strong>Hire me on Upwork</strong><span>Freelance &amp; contract work</span></span>
+        </a>
+        <a class="contact-card" href="https://www.linkedin.com/in/iammoshin/" target="_blank" rel="noopener noreferrer">
+          <span class="contact-icon"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg></span>
+          <span><strong>LinkedIn</strong><span>Professional profile</span></span>
+        </a>
+        <a class="contact-card" href="https://github.com/iammohssin" target="_blank" rel="noopener noreferrer">
+          <span class="contact-icon"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-4.3 1.4-4.3-2.5-6-3m12 5v-3.5c0-1 .1-1.4-.5-2 2.8-.3 5.5-1.4 5.5-6a4.6 4.6 0 0 0-1.3-3.2 4.2 4.2 0 0 0-.1-3.2s-1.1-.3-3.5 1.3a12.3 12.3 0 0 0-6.2 0C6.5 2.8 5.4 3.1 5.4 3.1a4.2 4.2 0 0 0-.1 3.2A4.6 4.6 0 0 0 4 9.5c0 4.6 2.7 5.7 5.5 6-.6.6-.6 1.2-.5 2V21"></path></svg></span>
+          <span><strong>GitHub</strong><span>Code &amp; open-source work</span></span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="wrap">
+  <span class="status-line"><span class="dot"></span>available for freelance work</span>
+  <span>&copy; <span id="year"></span> Mohsin Javaid</span>
+</footer>
+
+<script>
+  (function () {
+    var root = document.documentElement;
+    var toggle = document.getElementById('themeToggle');
+    var stored = localStorage.getItem('theme');
+    if (stored) root.setAttribute('data-theme', stored);
+
+    function current() {
+      var attr = root.getAttribute('data-theme');
+      if (attr) return attr;
+      return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+    }
+
+    toggle.addEventListener('click', function () {
+      var next = current() === 'dark' ? 'light' : 'dark';
+      root.setAttribute('data-theme', next);
+      localStorage.setItem('theme', next);
+    });
+
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    var reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+    // Scroll reveal
+    if ('IntersectionObserver' in window && !reduceMotion) {
+      var io = new IntersectionObserver(function (entries) {
+        entries.forEach(function (e) {
+          if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); }
+        });
+      }, { threshold: 0.12 });
+      document.querySelectorAll('.reveal').forEach(function (el) { io.observe(el); });
+    } else {
+      document.querySelectorAll('.reveal').forEach(function (el) { el.classList.add('in'); });
+    }
+
+    // Hero schematic canvas: nodes + right-angle traces + a traveling pulse
+    var canvas = document.getElementById('hero-canvas');
+    if (canvas && canvas.getContext && !reduceMotion) {
+      var ctx = canvas.getContext('2d');
+      var w, h, dpr = Math.min(window.devicePixelRatio || 1, 2);
+      var nodes = [];
+      var paths = [];
+
+      function styleColor(varName) {
+        return getComputedStyle(root).getPropertyValue(varName).trim();
+      }
+
+      function layout() {
+        var rect = canvas.parentElement.getBoundingClientRect();
+        w = rect.width; h = rect.height;
+        canvas.width = w * dpr; canvas.height = h * dpr;
+        canvas.style.width = w + 'px'; canvas.style.height = h + 'px';
+        ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+
+        var cols = w > 760 ? 6 : 3;
+        var rows = 3;
+        nodes = [];
+        for (var r = 0; r < rows; r++) {
+          for (var c = 0; c < cols; c++) {
+            nodes.push({
+              x: (w * 0.55) + (w * 0.42) * (c / (cols - 1 || 1)),
+              y: (h * 0.15) + (h * 0.7) * (r / (rows - 1 || 1))
+            });
+          }
+        }
+        paths = [];
+        for (var i = 0; i < nodes.length - 1; i++) {
+          if (Math.random() > 0.35) {
+            paths.push({ a: nodes[i], b: nodes[i + (Math.random() > 0.5 ? 1 : cols)] || nodes[i + 1], t: Math.random() });
+          }
+        }
+      }
+
+      function drawPath(p, color) {
+        var midX = p.b.x;
+        ctx.beginPath();
+        ctx.moveTo(p.a.x, p.a.y);
+        ctx.lineTo(midX, p.a.y);
+        ctx.lineTo(midX, p.b.y);
+        ctx.strokeStyle = color;
+        ctx.lineWidth = 1;
+        ctx.stroke();
+
+        p.t += 0.0035;
+        if (p.t > 1) p.t = 0;
+        var px, py;
+        var seg1 = Math.abs(midX - p.a.x);
+        var seg2 = Math.abs(p.b.y - p.a.y);
+        var total = seg1 + seg2 || 1;
+        var d = p.t * total;
+        if (d < seg1) { px = p.a.x + (midX - p.a.x) * (d / (seg1 || 1)); py = p.a.y; }
+        else { px = midX; py = p.a.y + (p.b.y - p.a.y) * ((d - seg1) / (seg2 || 1)); }
+        ctx.beginPath();
+        ctx.arc(px, py, 2.2, 0, Math.PI * 2);
+        ctx.fillStyle = styleColor('--status');
+        ctx.fill();
+      }
+
+      function draw() {
+        ctx.clearRect(0, 0, w, h);
+        var lineColor = styleColor('--border');
+        var nodeColor = styleColor('--muted');
+        paths.forEach(function (p) { drawPath(p, lineColor); });
+        nodes.forEach(function (n) {
+          ctx.beginPath();
+          ctx.arc(n.x, n.y, 2.5, 0, Math.PI * 2);
+          ctx.fillStyle = nodeColor;
+          ctx.fill();
+        });
+        requestAnimationFrame(draw);
+      }
+
+      layout();
+      window.addEventListener('resize', layout);
+      requestAnimationFrame(draw);
+    }
+  })();
+</script>
+</body>
+</html>
